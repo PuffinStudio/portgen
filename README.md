@@ -12,6 +12,16 @@ A Rust CLI tool that generates unique port numbers for your projects based on th
 
 ## Installation
 
+### Using Cargo (Recommended)
+
+Install directly from GitHub:
+
+```bash
+cargo install --git https://github.com/PuffinStudio/portgen.git
+```
+
+This will install `portgen` to `~/.cargo/bin/`. Make sure this directory is in your PATH.
+
 ### From Source
 
 ```bash

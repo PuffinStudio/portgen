@@ -142,7 +142,7 @@ fn generate_ports(project_name: &str) -> (u16, u16) {
     (port1, port2)
 }
 
-/// 检测端口是否被占用
+/// Check if a port is currently in use by attempting to bind to it
 fn is_port_in_use(port: u16) -> bool {
     match TcpListener::bind(format!("127.0.0.1:{}", port)) {
         Ok(listener) => {
