@@ -323,7 +323,6 @@ mod tests {
         let ports = generate_multiple_ports("test_project", 2);
         for port in &ports {
             assert!(*port >= 1024, "Port should be >= 1024");
-            assert!(*port <= 65535, "Port should be <= 65535");
         }
     }
 
@@ -332,7 +331,6 @@ mod tests {
         let ports = generate_multiple_ports("test_project", 10);
         for port in &ports {
             assert!(*port >= 1024, "Port {} should be >= 1024", port);
-            assert!(*port <= 65535, "Port {} should be <= 65535", port);
         }
     }
 
